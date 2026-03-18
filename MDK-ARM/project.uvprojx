@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\dev_lib\system;..\dev_lib\drivers;..\dev_lib\devices</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\dev_lib\system;..\dev_lib\drivers;..\dev_lib\devices;..\dev_lib\drivers\bus</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -976,6 +976,16 @@
               <FileName>led_dev.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\dev_lib\devices\led_dev.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>/dev_lib/drivers/bus</GroupName>
+          <Files>
+            <File>
+              <FileName>i2c_bus.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\dev_lib\drivers\bus\i2c_bus.c</FilePath>
             </File>
           </Files>
         </Group>

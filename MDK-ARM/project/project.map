@@ -447,12 +447,12 @@ Section Cross References
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.HAL_I2C_Master_Transmit_DMA) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_Master_Transmit_DMA) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_SlaveTxCpltCallback) for HAL_I2C_SlaveTxCpltCallback
     stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_SlaveRxCpltCallback) for HAL_I2C_SlaveRxCpltCallback
-    stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
-    stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_MemRxCpltCallback) for HAL_I2C_MemRxCpltCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) refers to i2c_bus.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) refers to i2c_bus.o(.text.HAL_I2C_MemRxCpltCallback) for HAL_I2C_MemRxCpltCallback
     stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_MasterRxCpltCallback) for HAL_I2C_MasterRxCpltCallback
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.I2C_DMAXferCplt) refers to stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.I2C_DMAError) refers to stm32f4xx_hal_dma.o(.text.HAL_DMA_GetError) for HAL_DMA_GetError
-    stm32f4xx_hal_i2c.o(.text.I2C_DMAError) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_DMAError) refers to i2c_bus.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.I2C_DMAError) refers to stm32f4xx_hal_i2c.o(.text.I2C_DMAError) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.HAL_I2C_Master_Receive_DMA) refers to system_stm32f4xx.o(.data.SystemCoreClock) for SystemCoreClock
     stm32f4xx_hal_i2c.o(.text.HAL_I2C_Master_Receive_DMA) refers to stm32f4xx_hal_i2c.o(.text.I2C_DMAXferCplt) for I2C_DMAXferCplt
@@ -531,7 +531,7 @@ Section Cross References
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.HAL_I2C_Slave_Seq_Transmit_DMA) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_Slave_Seq_Transmit_DMA) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.I2C_DMAAbort) refers to system_stm32f4xx.o(.data.SystemCoreClock) for SystemCoreClock
     stm32f4xx_hal_i2c.o(.text.I2C_DMAAbort) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_AbortCpltCallback) for HAL_I2C_AbortCpltCallback
-    stm32f4xx_hal_i2c.o(.text.I2C_DMAAbort) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_DMAAbort) refers to i2c_bus.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.I2C_DMAAbort) refers to stm32f4xx_hal_i2c.o(.text.I2C_DMAAbort) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.HAL_I2C_Slave_Seq_Receive_IT) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_Slave_Seq_Receive_IT) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.HAL_I2C_Slave_Seq_Receive_DMA) refers to stm32f4xx_hal_i2c.o(.text.I2C_DMAAbort) for I2C_DMAAbort
@@ -548,7 +548,7 @@ Section Cross References
     stm32f4xx_hal_i2c.o(.text.I2C_ITError) refers to stm32f4xx_hal_dma.o(.text.HAL_DMA_Abort_IT) for HAL_DMA_Abort_IT
     stm32f4xx_hal_i2c.o(.text.I2C_ITError) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_AbortCpltCallback) for HAL_I2C_AbortCpltCallback
     stm32f4xx_hal_i2c.o(.text.I2C_ITError) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_ListenCpltCallback) for HAL_I2C_ListenCpltCallback
-    stm32f4xx_hal_i2c.o(.text.I2C_ITError) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_ITError) refers to i2c_bus.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.I2C_ITError) refers to stm32f4xx_hal_i2c.o(.text.I2C_ITError) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.HAL_I2C_EV_IRQHandler) refers to stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) for I2C_MasterReceive_RXNE
     stm32f4xx_hal_i2c.o(.text.HAL_I2C_EV_IRQHandler) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_AddrCallback) for HAL_I2C_AddrCallback
@@ -574,11 +574,11 @@ Section Cross References
     stm32f4xx_hal_i2c.o(.text.I2C_MemoryTransmit_TXE_BTF) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_MemTxCpltCallback) for HAL_I2C_MemTxCpltCallback
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.I2C_MemoryTransmit_TXE_BTF) refers to stm32f4xx_hal_i2c.o(.text.I2C_MemoryTransmit_TXE_BTF) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) refers to system_stm32f4xx.o(.data.SystemCoreClock) for SystemCoreClock
-    stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_MemRxCpltCallback) for HAL_I2C_MemRxCpltCallback
-    stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) refers to i2c_bus.o(.text.HAL_I2C_MemRxCpltCallback) for HAL_I2C_MemRxCpltCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) refers to i2c_bus.o(.text.HAL_I2C_ErrorCallback) for HAL_I2C_ErrorCallback
     stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_MasterRxCpltCallback) for HAL_I2C_MasterRxCpltCallback
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.I2C_MasterReceive_RXNE) refers to stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_RXNE) for [Anonymous Symbol]
-    stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_BTF) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_MemRxCpltCallback) for HAL_I2C_MemRxCpltCallback
+    stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_BTF) refers to i2c_bus.o(.text.HAL_I2C_MemRxCpltCallback) for HAL_I2C_MemRxCpltCallback
     stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_BTF) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_MasterRxCpltCallback) for HAL_I2C_MasterRxCpltCallback
     stm32f4xx_hal_i2c.o(.ARM.exidx.text.I2C_MasterReceive_BTF) refers to stm32f4xx_hal_i2c.o(.text.I2C_MasterReceive_BTF) for [Anonymous Symbol]
     stm32f4xx_hal_i2c.o(.text.HAL_I2C_ER_IRQHandler) refers to stm32f4xx_hal_i2c.o(.text.I2C_ITError) for I2C_ITError
@@ -1203,6 +1203,27 @@ Section Cross References
     led_dev.o(.ARM.exidx.text.led_dev_init) refers to led_dev.o(.text.led_dev_init) for [Anonymous Symbol]
     led_dev.o(.text.led_dev_proc) refers to led_dev.o(.data..L_MergedGlobals) for .L_MergedGlobals
     led_dev.o(.ARM.exidx.text.led_dev_proc) refers to led_dev.o(.text.led_dev_proc) for [Anonymous Symbol]
+    i2c_bus.o(.text.i2c_bus_init) refers to i2c_bus.o(.text.dma_read_bytes) for dma_read_bytes
+    i2c_bus.o(.text.i2c_bus_init) refers to i2c_bus.o(.text.read_bytes) for read_bytes
+    i2c_bus.o(.text.i2c_bus_init) refers to i2c_bus.o(.text.write_bytes) for write_bytes
+    i2c_bus.o(.text.i2c_bus_init) refers to i2c_bus.o(.text.get_dma_rx_busy) for get_dma_rx_busy
+    i2c_bus.o(.ARM.exidx.text.i2c_bus_init) refers to i2c_bus.o(.text.i2c_bus_init) for [Anonymous Symbol]
+    i2c_bus.o(.text.dma_read_bytes) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_GetState) for HAL_I2C_GetState
+    i2c_bus.o(.text.dma_read_bytes) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_Mem_Read_DMA) for HAL_I2C_Mem_Read_DMA
+    i2c_bus.o(.ARM.exidx.text.dma_read_bytes) refers to i2c_bus.o(.text.dma_read_bytes) for [Anonymous Symbol]
+    i2c_bus.o(.text.read_bytes) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_Mem_Read) for HAL_I2C_Mem_Read
+    i2c_bus.o(.ARM.exidx.text.read_bytes) refers to i2c_bus.o(.text.read_bytes) for [Anonymous Symbol]
+    i2c_bus.o(.text.write_bytes) refers to stm32f4xx_hal_i2c.o(.text.HAL_I2C_Mem_Write) for HAL_I2C_Mem_Write
+    i2c_bus.o(.ARM.exidx.text.write_bytes) refers to i2c_bus.o(.text.write_bytes) for [Anonymous Symbol]
+    i2c_bus.o(.ARM.exidx.text.get_dma_rx_busy) refers to i2c_bus.o(.text.get_dma_rx_busy) for [Anonymous Symbol]
+    i2c_bus.o(.text.HAL_I2C_MemRxCpltCallback) refers to i2c_bus.o(.data..L_MergedGlobals) for .L_MergedGlobals
+    i2c_bus.o(.ARM.exidx.text.HAL_I2C_MemRxCpltCallback) refers to i2c_bus.o(.text.HAL_I2C_MemRxCpltCallback) for [Anonymous Symbol]
+    i2c_bus.o(.text.HAL_I2C_ErrorCallback) refers to i2c_bus.o(.data..L_MergedGlobals) for .L_MergedGlobals
+    i2c_bus.o(.ARM.exidx.text.HAL_I2C_ErrorCallback) refers to i2c_bus.o(.text.HAL_I2C_ErrorCallback) for [Anonymous Symbol]
+    i2c_bus.o(.data.i2c1_ctx) refers to main.o(.bss.hi2c1) for hi2c1
+    i2c_bus.o(.data.i2c2_ctx) refers to main.o(.bss.hi2c2) for hi2c2
+    i2c_bus.o(.data..L_MergedGlobals) refers to i2c_bus.o(.data.i2c1_ctx) for [Anonymous Symbol]
+    i2c_bus.o(.data..L_MergedGlobals) refers to i2c_bus.o(.data.i2c2_ctx) for [Anonymous Symbol]
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
@@ -2277,8 +2298,26 @@ Removing Unused input sections from the image.
     Removing led_dev.o(.text), (0 bytes).
     Removing led_dev.o(.ARM.exidx.text.led_dev_init), (8 bytes).
     Removing led_dev.o(.ARM.exidx.text.led_dev_proc), (8 bytes).
+    Removing i2c_bus.o(.text), (0 bytes).
+    Removing i2c_bus.o(.text.i2c_bus_init), (54 bytes).
+    Removing i2c_bus.o(.ARM.exidx.text.i2c_bus_init), (8 bytes).
+    Removing i2c_bus.o(.text.dma_read_bytes), (62 bytes).
+    Removing i2c_bus.o(.ARM.exidx.text.dma_read_bytes), (8 bytes).
+    Removing i2c_bus.o(.text.read_bytes), (52 bytes).
+    Removing i2c_bus.o(.ARM.exidx.text.read_bytes), (8 bytes).
+    Removing i2c_bus.o(.text.write_bytes), (52 bytes).
+    Removing i2c_bus.o(.ARM.exidx.text.write_bytes), (8 bytes).
+    Removing i2c_bus.o(.text.get_dma_rx_busy), (6 bytes).
+    Removing i2c_bus.o(.ARM.exidx.text.get_dma_rx_busy), (8 bytes).
+    Removing i2c_bus.o(.text.HAL_I2C_MemRxCpltCallback), (46 bytes).
+    Removing i2c_bus.o(.ARM.exidx.text.HAL_I2C_MemRxCpltCallback), (8 bytes).
+    Removing i2c_bus.o(.text.HAL_I2C_ErrorCallback), (46 bytes).
+    Removing i2c_bus.o(.ARM.exidx.text.HAL_I2C_ErrorCallback), (8 bytes).
+    Removing i2c_bus.o(.data.i2c1_ctx), (8 bytes).
+    Removing i2c_bus.o(.data.i2c2_ctx), (8 bytes).
+    Removing i2c_bus.o(.data..L_MergedGlobals), (40 bytes).
 
-1051 unused section(s) (total 71238 bytes) removed from the image.
+1069 unused section(s) (total 71668 bytes) removed from the image.
 
 ==============================================================================
 
@@ -2308,6 +2347,7 @@ Image Symbol Table
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     delay.c                                  0x00000000   Number         0  delay.o ABSOLUTE
     handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    i2c_bus.c                                0x00000000   Number         0  i2c_bus.o ABSOLUTE
     init.s                                   0x00000000   Number         0  init.o ABSOLUTE
     led.c                                    0x00000000   Number         0  led.o ABSOLUTE
     led_dev.c                                0x00000000   Number         0  led_dev.o ABSOLUTE
@@ -2699,21 +2739,21 @@ Memory Map of the image
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f407xx.o
-    0x08000188   0x08000188   0x00000000   Code   RO         1357  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000188   0x08000188   0x00000004   Code   RO         1364    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800018c   0x0800018c   0x00000004   Code   RO         1367    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000190   0x08000190   0x00000000   Code   RO         1369    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000190   0x08000190   0x00000000   Code   RO         1371    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000190   0x08000190   0x00000008   Code   RO         1372    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000198   0x08000198   0x00000000   Code   RO         1374    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000198   0x08000198   0x00000000   Code   RO         1376    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000198   0x08000198   0x00000004   Code   RO         1365    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000188   0x08000188   0x00000000   Code   RO         1382  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000188   0x08000188   0x00000004   Code   RO         1389    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800018c   0x0800018c   0x00000004   Code   RO         1392    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000190   0x08000190   0x00000000   Code   RO         1394    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000190   0x08000190   0x00000000   Code   RO         1396    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000190   0x08000190   0x00000008   Code   RO         1397    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO         1399    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO         1401    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000198   0x08000198   0x00000004   Code   RO         1390    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x0800019c   0x0800019c   0x00000024   Code   RO            4    .text               startup_stm32f407xx.o
-    0x080001c0   0x080001c0   0x00000062   Code   RO         1360    .text               mc_w.l(uldiv.o)
-    0x08000222   0x08000222   0x00000024   Code   RO         1362    .text               mc_w.l(memseta.o)
-    0x08000246   0x08000246   0x0000001e   Code   RO         1378    .text               mc_w.l(llshl.o)
-    0x08000264   0x08000264   0x00000020   Code   RO         1380    .text               mc_w.l(llushr.o)
-    0x08000284   0x08000284   0x00000030   Code   RO         1382    .text               mc_w.l(init.o)
+    0x080001c0   0x080001c0   0x00000062   Code   RO         1385    .text               mc_w.l(uldiv.o)
+    0x08000222   0x08000222   0x00000024   Code   RO         1387    .text               mc_w.l(memseta.o)
+    0x08000246   0x08000246   0x0000001e   Code   RO         1403    .text               mc_w.l(llshl.o)
+    0x08000264   0x08000264   0x00000020   Code   RO         1405    .text               mc_w.l(llushr.o)
+    0x08000284   0x08000284   0x00000030   Code   RO         1407    .text               mc_w.l(init.o)
     0x080002b4   0x080002b4   0x00000002   Code   RO           41    .text.BusFault_Handler  stm32f4xx_it.o
     0x080002b6   0x080002b6   0x00000002   PAD
     0x080002b8   0x080002b8   0x0000000c   Code   RO           53    .text.DMA1_Stream0_IRQHandler  stm32f4xx_it.o
@@ -2849,13 +2889,13 @@ Memory Map of the image
     0x08002fd2   0x08002fd2   0x00000002   PAD
     0x08002fd4   0x08002fd4   0x00000034   Code   RO         1319    .text.task_loop     task.o
     0x08003008   0x08003008   0x0000000a   Code   RO         1336    .text.toggle        led.o
-    0x08003012   0x08003012   0x0000000e   Code   RO         1386    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003020   0x08003020   0x00000002   Code   RO         1387    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003022   0x08003022   0x0000000e   Code   RO         1388    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08003012   0x08003012   0x0000000e   Code   RO         1411    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08003020   0x08003020   0x00000002   Code   RO         1412    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08003022   0x08003022   0x0000000e   Code   RO         1413    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x08003030   0x08003030   0x00000010   Data   RO         1282    .rodata.AHBPrescTable  system_stm32f4xx.o
     0x08003040   0x08003040   0x00000008   Data   RO         1283    .rodata.APBPrescTable  system_stm32f4xx.o
     0x08003048   0x08003048   0x00000008   Data   RO          370    .rodata.cst8        stm32f4xx_hal_dma.o
-    0x08003050   0x08003050   0x00000020   Data   RO         1385    Region$$Table       anon$$obj.o
+    0x08003050   0x08003050   0x00000020   Data   RO         1410    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003070, Size: 0x00000758, Max: 0x0001c000, ABSOLUTE)

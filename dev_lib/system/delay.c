@@ -42,7 +42,7 @@ void delay_us(uint32_t us)
  * 
  * @return 当前系统运行到现在的微秒数
  */
-uint32_t delay_get_us_tick(void)
+uint64_t delay_get_us_tick(void)
 {
     init();
 
@@ -51,6 +51,5 @@ uint32_t delay_get_us_tick(void)
     last_cycle = now;
 
     total_us += delta / ticks_per_us;
-
-    return (uint32_t)total_us;
+    return total_us;
 }
