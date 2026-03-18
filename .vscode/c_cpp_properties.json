@@ -13,7 +13,7 @@
                 "USE_HAL_DRIVER",
                 "STM32F407xx"
             ],
-            "compilerPath": "C:\\software\\mingw64\\bin\\gcc.exe",
+            "compilerPath": "gcc",
             "cStandard": "c17",
             "cppStandard": "gnu++17",
             "intelliSenseMode": "windows-gcc-x64"
