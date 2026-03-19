@@ -8,6 +8,6 @@ extern led_t onBoradBuleLed;
 extern led_t onBoradGreenLed;
 
 void led_dev_init(void);
-void led_dev_proc(void);
+void led_dev_proc(uint32_t tick);
 
 #endif

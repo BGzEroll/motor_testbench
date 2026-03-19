@@ -30,5 +30,5 @@ project/stm32f4xx_it.o: ..\Core\Src\stm32f4xx_it.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   ..\dev_lib\system\start.h ..\dev_lib\system\task.h \
-  ..\dev_lib\devices\led_dev.h ..\dev_lib\drivers\led.h \
-  ..\Core\Inc\stm32f4xx_it.h
+  ..\dev_lib\system\event.h ..\dev_lib\devices\led_dev.h \
+  ..\dev_lib\drivers\led.h ..\Core\Inc\stm32f4xx_it.h

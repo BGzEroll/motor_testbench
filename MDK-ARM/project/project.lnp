@@ -28,6 +28,7 @@
 "project\delay.o"
 "project\start.o"
 "project\task.o"
+"project\event.o"
 "project\led.o"
 "project\led_dev.o"
 "project\i2c_bus.o"

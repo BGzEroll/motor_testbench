@@ -6,7 +6,7 @@
   <Header>### uVision Project, (C) Keil Software</Header>
 
   <PrjGuiSettings>
-    <LastAddFilePath>D:\Embedded-related\STM32\Hands-on\halLib\motor_testbench\project\dev_lib\drivers\bus</LastAddFilePath>
+    <LastAddFilePath>D:\Embedded-related\STM32\Hands-on\halLib\motor_testbench\project\dev_lib\system</LastAddFilePath>
   </PrjGuiSettings>
 
   <ViewPool/>
@@ -93,18 +93,18 @@
       <flags>0</flags>
       <showCmd>1</showCmd>
       <MinPosition>
-        <xPos>-1</xPos>
-        <yPos>-1</yPos>
+        <xPos>-32000</xPos>
+        <yPos>-32000</yPos>
       </MinPosition>
       <MaxPosition>
         <xPos>-1</xPos>
         <yPos>-1</yPos>
       </MaxPosition>
       <NormalPosition>
-        <Top>295</Top>
-        <Left>1183</Left>
-        <Right>2244</Right>
-        <Bottom>993</Bottom>
+        <Top>554</Top>
+        <Left>387</Left>
+        <Right>1448</Right>
+        <Bottom>1252</Bottom>
       </NormalPosition>
     </WindowPosition>
     <MDIClientArea>

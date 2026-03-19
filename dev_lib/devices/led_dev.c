@@ -15,7 +15,7 @@ void led_dev_init(void)
 /**
  * @brief led 实例进程函数
  */
-void led_dev_proc(void)
+void led_dev_proc(uint32_t tick)
 {
     on_board_bule_led.toggle(&on_board_bule_led);
 	// on_board_green_led.toggle(&on_board_green_led);

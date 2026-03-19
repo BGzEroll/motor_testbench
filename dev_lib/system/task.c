@@ -1,6 +1,6 @@
 #include "task.h"
 
-static task_t *p, *head = NULL, *tail = NULL;		// 定义头尾链表指针与当前链表指针
+static task_t *head = NULL, *tail = NULL;		// 定义头尾链表指针与当前链表指针
 
 /**
  * @brief 检查是否到达任务运行时间
@@ -11,7 +11,7 @@ static uint8_t check_time(task_t *t)
 	
 	if(now - t->last_time >= t->loop_time)
 	{
-		t->last_time = now;		// 更新时间
+		t->last_time += t->loop_time;		// 更新时间
 		return 1;
 	}
 	return 0;
@@ -20,7 +20,7 @@ static uint8_t check_time(task_t *t)
 /**
  * @brief 创建调度器任务
  */
-static void create(task_t *new_task, void (*task_callback)(void), uint32_t loop_time)
+static void create(task_t *new_task, void (*task_callback)(uint32_t tick), uint32_t loop_time)
 {
 	new_task->loop_time = loop_time;		// 设置定时时间
 	new_task->task_callback = task_callback;		// 设置回调函数
@@ -43,10 +43,10 @@ static void create(task_t *new_task, void (*task_callback)(void), uint32_t loop_
  */
 static void loop(void)
 {
-	p = head;
+	task_t *p = head;
 	while(p)
 	{
-		if(check_time(p)){p->task_callback();}        // 到点就调用对应任务的回调函数
+		if(check_time(p)){p->task_callback(p->loop_time);}        // 到点就调用对应任务的回调函数
 		p = p->p_next;			// 移动到下一个任务
 	}
 }
@@ -54,5 +54,5 @@ static void loop(void)
 // 任务操作函数
 const task_ops_t task = {
 	.create = create,
-	.loop = loop,
+	.loop = loop
 };

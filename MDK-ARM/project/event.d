@@ -1,5 +1,4 @@
-project/led_dev.o: ..\dev_lib\devices\led_dev.c \
-  ..\dev_lib\devices\led_dev.h ..\dev_lib\drivers\led.h \
+project/event.o: ..\dev_lib\system\event.c ..\dev_lib\system\event.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -29,6 +28,4 @@ project/led_dev.o: ..\dev_lib\devices\led_dev.c \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Core\Inc\main.h ..\dev_lib\system\start.h ..\dev_lib\system\task.h \
-  ..\dev_lib\system\event.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h

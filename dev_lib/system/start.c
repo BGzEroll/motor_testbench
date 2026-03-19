@@ -27,4 +27,5 @@ void start_init_all(void)
 void start_loop(void)
 {
 	task.loop();
+	event.process();
 }

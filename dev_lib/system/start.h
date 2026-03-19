@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "task.h"
+#include "event.h"
 #include "led_dev.h"
 
 void start_init_all(void);

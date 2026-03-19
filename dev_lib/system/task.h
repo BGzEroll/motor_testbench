@@ -8,12 +8,12 @@
 typedef struct task {
 	uint32_t last_time;
 	uint32_t loop_time;
-	void (*task_callback)(void);     // 进程函数回调
+	void (*task_callback)(uint32_t tick);     // 进程函数回调
 	struct task *p_next;
 } task_t;
 
 typedef struct task_ops {
-	void (*create)(task_t *new_task, void (*task_callback)(void), uint32_t loop_time);
+	void (*create)(task_t *new_task, void (*task_callback)(uint32_t tick), uint32_t loop_time);
 	void (*loop)(void);
 } task_ops_t;
 
