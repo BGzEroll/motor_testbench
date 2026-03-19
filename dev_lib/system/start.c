@@ -6,7 +6,7 @@
 static void task_list(void)
 {
 	static task_t led_dev_task;
-	task_create(&led_dev_task, led_dev_proc, 1000);
+	task.create(&led_dev_task, led_dev_proc, 1000);
 }
 
 /**
@@ -26,5 +26,5 @@ void start_init_all(void)
  */
 void start_loop(void)
 {
-	task_loop();
+	task.loop();
 }

@@ -12,7 +12,11 @@ typedef struct task {
 	struct task *p_next;
 } task_t;
 
-void task_create(task_t *new_task, void (*task_callback)(void), uint32_t loop_time);
-void task_loop(void);
+typedef struct task_ops {
+	void (*create)(task_t *new_task, void (*task_callback)(void), uint32_t loop_time);
+	void (*loop)(void);
+} task_ops_t;
+
+extern const task_ops_t task;
 
 #endif
