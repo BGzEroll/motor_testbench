@@ -20,7 +20,6 @@ static uint8_t get(event_t *event)
 
 /**
  * @brief 分发事件
- * @brief 分发事件
  * @param event 事件指针
  */
 static void dispatch(event_t *event)
