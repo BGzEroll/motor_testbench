@@ -8,12 +8,6 @@
 #define EVENT_MAX               32
 #define EVENT_PARAM_MAX         8
 
-typedef struct event {
-    uint16_t type;
-    int32_t argc;
-    void *argv[EVENT_PARAM_MAX];
-} event_t;
-
 typedef void (*event_handler_t)(int32_t argc, void *argv[]);
 
 typedef struct event_ops {

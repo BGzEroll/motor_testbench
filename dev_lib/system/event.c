@@ -1,5 +1,11 @@
 #include "event.h"
 
+typedef struct event {
+    uint16_t type;
+    int32_t argc;
+    void *argv[EVENT_PARAM_MAX];
+} event_t;
+
 static event_t event_queue[EVENT_QUEUE_SIZE];
 static volatile uint8_t head = 0, tail = 0;
 
